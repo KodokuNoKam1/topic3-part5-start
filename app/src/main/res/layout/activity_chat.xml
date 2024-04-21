@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".screens.ChatActivity">
-
-
-    <ImageView
+	<ImageView
         android:id="@+id/backButton"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -20,8 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
-
-    <ImageView
+	<ImageView
         android:id="@+id/image"
         android:layout_width="180dp"
         android:layout_height="180dp"
@@ -31,8 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
-
-    <TextView
+	<TextView
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -47,8 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image" />
-
-    <TextView
+	<TextView
         android:id="@+id/subtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -63,21 +58,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rounded_button"
-        android:backgroundTint="@color/colorPrimary"
-        android:paddingEnd="32dp"
-        android:paddingStart="32dp"
-        android:stateListAnimator="@null"
-        android:text="Start chatting"
-        android:textColor="#FFFFFF"
+	<androidx.compose.ui.platform.ComposeView
+        android:id="@+id/composeButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subtitle" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
